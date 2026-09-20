@@ -205,3 +205,17 @@ html {
   border: none;
   border-radius: 8px;
 }
+
+.lead {
+  color: white;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #111111;
+  color: white;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+}
