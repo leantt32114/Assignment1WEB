@@ -1,0 +1,146 @@
+body {
+  margin: 0;               
+              
+  background-color: #111111;
+  color: s;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 100%;                
+  line-height: 1.6;
+}
+
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: #12141a;
+  border: 1px solid #2a2e38;
+  border-bottom: 4px solid rgb(237, 28, 36);
+}
+
+h1, h2, .brand {
+  font-family: "Consolas", "Courier New", monospace;
+  color: rgb(237, 28, 36);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.1rem;               /* rem: размер от корневого шрифта */
+  text-align: center;
+  margin: 1.5rem 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  text-align: left;
+  border-left: 6px solid rgb(237, 28, 36);
+  padding-left: 0.6em;             /* em: отступ зависит от размера h2 */
+  margin-top: 2rem;
+}
+
+p {
+  max-width: 70ch;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #2a2e38;
+  border-radius: 4px;
+  background-color: #12141a;
+}
+
+a {
+  color: rgb(180, 20, 26);
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;           /* убираем подчёркивание */
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lead {
+    color: white;
+    font-family: Georgia, 'Times New Roman',;
+
+}
+
+figure, figure img {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none !important;
+    display: flex
+}
+
+.figh1 {
+    text-align: left;
+    font-size: 300%;
+    font-family: Georgia, 'Times New Roman',;
+}
+
+.figimg {
+justify-content: center;
+    display: flex;
+    width: 50%;
+    height: auto;
+}
+
+.figdiv {
+    padding: 3rem;
+    padding-left: 12rem;
+}
+
+.nav-link.active {
+  background-color: rgb(237, 28, 36);
+  color: white;
+}
+
+
+.fsrfm {
+    color: white;
+}
+
+.fsr {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+
+p {
+    color: white;
+}
+
+.block2img {
+    width: 80%;
+    height: auto;
+}
+
+.block2img1 {
+    padding-top: 10rem;
+    padding-left: 12rem;
+    justify-content: center;
+    width: 50%;
+}
+
+.block2 {
+    display: flex;
+}
