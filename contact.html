@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comparison &amp; Contact — AMD Radeon RX 9070 XT</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,9 +11,141 @@
     <p class="brand">RX 9070 XT</p>
     <nav class="main-nav" >
       <ul>
-        <li><a class="nav-link" href="index.html" aria-current="page">Главная</a></li>
-        <li><a class="nav-link" href="about.html">Архитектура RDNA 4</a></li>
-        <li><a class="nav-link active" href="contact.html">Сравнение и связь</a></li>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">RDNA 4 Architecture</a></li>
+        <li><a class="nav-link active" href="contact.html" aria-current="page">Comparison &amp; Contact</a></li>
       </ul>
     </nav>
   </header>
+  <main>
+   <h1>Architecture Comparison: RDNA 3 vs RDNA 4</h1>
+   <table style="color: white; padding-left: 10rem;">
+  <caption style="padding-left: 10rem;">Comparison of key architectural features between RDNA 3 and RDNA 4</caption>
+  <thead>
+    <tr>
+      <th scope="col">Feature</th>
+      <th scope="col">RDNA 3</th>
+      <th scope="col">RDNA 4</th>
+      <th scope="col">Improvement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Process &amp; Design</th>
+      <td>TSMC 5nm + 6nm (chiplet)</td>
+      <td>TSMC 4nm (monolithic)</td>
+      <td>Simpler, more efficient design</td>
+    </tr>
+    <tr>
+      <th scope="row">Ray Tracing</th>
+      <td>2nd generation, Optimized Ray Accelerators</td>
+      <td>3rd generation, doubled ray intersection rates</td>
+      <td>Up to 2x faster ray intersection</td>
+    </tr>
+    <tr>
+      <th scope="row">AI Acceleration (Matrix)</th>
+      <td>1st generation, Wave Matrix Multiply Accumulate</td>
+      <td>3rd gen Matrix Acceleration with ML-based upscaling</td>
+      <td>Dedicated AI pipelines for FSR 4</td>
+    </tr>
+    <tr>
+      <th scope="row">Cache System</th>
+      <td>Up to 96 MB Infinity Cache</td>
+      <td>64 MB 3rd gen Infinity Cache + 8 MB L2</td>
+      <td>More balanced cache hierarchy</td>
+    </tr>
+    <tr>
+      <th scope="row">Memory Interface</th>
+      <td>Up to 384-bit GDDR6, 20 Gbps</td>
+      <td>256-bit GDDR6, up to 20 Gbps</td>
+      <td>Offset by larger cache</td>
+    </tr>
+    <tr>
+      <th scope="row">PCIe Interface</th>
+      <td>PCIe 4.0</td>
+      <td>PCIe 5.0</td>
+      <td>2x more bandwidth</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th scope="row">Source</th>
+      <td colspan="3">Data taken from official AMD presentation materials</td>
+    </tr>
+  </tfoot>
+</table>
+<h2>Get in Touch</h2>
+<form action="#" method="post">
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <p>
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" name="full-name" placeholder="Jane Doe" required>
+    </p>
+
+    <p>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="[email protected]" required>
+    </p>
+
+    <p>
+      <label for="experience">Years of PC gaming experience</label>
+      <input type="number" id="experience" name="experience" min="0" max="50">
+    </p>
+
+    <p>
+      <label for="contact-date">Preferred contact date</label>
+      <input type="date" id="contact-date" name="contact-date">
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Your Setup &amp; Feedback</legend>
+
+    <p>
+      <label for="rgb-color">Favorite RGB color for your setup</label>
+      <input type="color" id="rgb-color" name="rgb-color" value="#e30613">
+    </p>
+
+    <fieldset>
+      <legend>What resolution do you game at?</legend>
+      <label for="res-1080p">
+        <input type="radio" id="res-1080p" name="resolution" value="1080p">
+        1080p
+      </label>
+      <label for="res-1440p">
+        <input type="radio" id="res-1440p" name="resolution" value="1440p">
+        1440p
+      </label>
+      <label for="res-4k">
+        <input type="radio" id="res-4k" name="resolution" value="4k">
+        4K
+      </label>
+    </fieldset>
+
+    <p>
+      <label for="newsletter">
+        <input type="checkbox" id="newsletter" name="newsletter">
+        Subscribe to GPU news updates
+      </label>
+    </p>
+
+    <p>
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="4" maxlength="500" placeholder="Tell us what you think..."></textarea>
+    </p>
+  </fieldset>
+
+  <button type="submit">Send Message</button>
+</form>
+  </main>
+  <footer>
+    <p>&copy; 2026. Educational project for the Web Technologies course.</p>
+    <p>
+       <a class="footer-link" href="https://www.amd.com" target="_blank" rel="noopener" style="padding-left: 1rem;">AMD</a>
+        <a class="footer-link" href="https://leantt32114.github.io/Assignment1WEB/" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>
