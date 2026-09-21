@@ -1,13 +1,11 @@
 body {
-  margin: 0;               
-              
+  margin: 0;
   background-color: #111111;
-  color: s;
+  color: white;
   font-family: "Segoe UI", Tahoma, sans-serif;
-  font-size: 100%;                
+  font-size: 100%;
   line-height: 1.6;
 }
-
 
 .site-header {
   display: flex;
@@ -28,7 +26,7 @@ h1, h2, .brand {
 }
 
 h1 {
-  font-size: 2.1rem;               /* rem: размер от корневого шрифта */
+  font-size: 2.1rem;
   text-align: center;
   margin: 1.5rem 0 0.5rem;
 }
@@ -37,12 +35,13 @@ h2 {
   font-size: 1.4rem;
   text-align: left;
   border-left: 6px solid rgb(237, 28, 36);
-  padding-left: 0.6em;             /* em: отступ зависит от размера h2 */
+  padding-left: 0.6em;
   margin-top: 2rem;
 }
 
 p {
   max-width: 70ch;
+  color: white;
 }
 
 img {
@@ -60,10 +59,21 @@ a {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  text-decoration: none;           /* убираем подчёркивание */
+  text-decoration: none;
   color: white;
   border: 1px solid transparent;
   border-radius: 3px;
+}
+
+.nav-link:hover {
+  background-color: rgb(237, 28, 36);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background-color: rgb(237, 28, 36);
+  color: white;
 }
 
 .main-nav ul {
@@ -76,77 +86,70 @@ a {
 }
 
 .lead {
-    color: white;
-    font-family: Georgia, 'Times New Roman',;
-
+  color: white;
+  font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
 figure, figure img {
-    outline: none !important;
-    outline-width: 0 !important;
-    box-shadow: none !important;
-    display: flex
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none !important;
+  display: flex;
 }
 
 .figh1 {
-    text-align: left;
-    font-size: 250%;
-    font-family: Georgia, 'Times New Roman',;
+  text-align: left;
+  font-size: 250%;
+}
+
+#hero-title {
+  letter-spacing: 1px;
 }
 
 .figimg {
-justify-content: center;
-    display: flex;
-    width: 50%;
-    height: auto;
+  justify-content: center;
+  display: flex;
+  width: 50%;
+  height: auto;
+  border: none;
 }
 
 .figdiv {
-    padding: 3rem;
-    padding-left: 12rem;
+  padding: 3rem;
+  padding-left: 12rem;
 }
 
-.nav-link.active {
-  background-color: rgb(237, 28, 36);
+.fsrfm {
   color: white;
 }
 
-
-.fsrfm {
-    color: white;
-}
-
 .fsr {
-    color: white;
+  color: white;
 }
 
 li {
-    color: white;
-}
-
-
-p {
-    color: white;
+  color: white;
 }
 
 .block2img {
-    width: 80%;
-    height: auto;
+  width: 80%;
+  height: auto;
+  border: none;
 }
 
 .block2img1 {
-    padding-top: 10rem;
-    padding-left: 12rem;
-    justify-content: center;
-    width: 50%;
+  padding-top: 10rem;
+  padding-left: 12rem;
+  justify-content: center;
+  width: 50%;
 }
 
 .block2 {
-    display: flex;
+  display: flex;
 }
 
 .block21 {
-    padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 footer {
@@ -167,8 +170,6 @@ footer p {
 footer a {
   color: #e30613;
   text-decoration: none;
-  
-
 }
 
 footer a:hover {
@@ -176,17 +177,78 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.footer-link {
+  margin-left: 1rem;
+}
+
 html {
-    overflow-y: scroll;
+  overflow-y: scroll;
   scrollbar-gutter: stable;
 }
 
-.ablock1p {
-    display: flex;
-}
 
 .ablock1 {
-    padding-left: 2rem;
+  display: flex;
+  padding-left: 2rem;
+}
+
+.ablock1p {
+  display: flex;
+}
+
+.imgablock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arch-overview-img {
+  border: none;
+  width: 70%;
+  height: auto;
+}
+
+.timeline-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 80%;
+}
+
+.timeline-list li {
+  padding-right: 1rem;
+}
+
+.arch-figure {
+  justify-content: center;
+  align-items: center;
+}
+
+.arch-figure img {
+  border: none;
+}
+
+.quote-block {
+  margin: 0;
+}
+
+.quote-block p {
+  padding-left: 7rem;
+}
+
+.quote-block footer {
+  display: block;
+  background-color: transparent;
+  border: none;
+  margin-top: 0.5rem;
+  padding-left: 7rem;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.video-center {
+  display: flex;
+  justify-content: center;
 }
 
 .video-wrapper {
@@ -206,16 +268,78 @@ html {
   border-radius: 8px;
 }
 
-.lead {
+
+table {
+  width: calc(100% - 10rem);
+  margin: 1.5rem 0 1.5rem 10rem;
+  border-collapse: collapse;
   color: white;
-  font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
-body {
-  margin: 0;
-  background-color: #111111;
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+th, td {
+  padding: 0.6rem 1rem;
+  border: 1px solid #2a2e38;
+  text-align: left;
+}
+
+thead th {
+  background-color: #12141a;
+  color: rgb(237, 28, 36);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #181a20;
+}
+
+tfoot {
+  font-style: italic;
+  color: #cccccc;
+}
+
+@media (max-width: 700px) {
+  table {
+    margin-left: 1rem;
+    width: calc(100% - 1rem);
+  }
+}
+
+
+fieldset {
+  border: 1px solid #2a2e38;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+legend {
+  color: rgb(237, 28, 36);
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid rgb(237, 28, 36);
+  background-color: #1a1c22;
+}
+
+button[type="submit"] {
+  background-color: rgb(237, 28, 36);
   color: white;
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  font-size: 100%;
-  line-height: 1.6;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(180, 20, 26);
 }
